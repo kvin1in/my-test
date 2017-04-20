@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel='stylesheet prefetch' href='https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/css/jqueryui.min.css'>
+    <link rel="stylesheet" href="./dist/stylesheets/app.css">
+
+
+</head>
+
+
+<body>
+    <div class="bg">
+
+    </div>
+    <div id="carousel-example-generic" data-interval="false" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <!--FIRST SLIDE-->
+            <div class="item active" id="firstSlide">
+                <div class="row">
+                    <input type="button" id="btnAdd" data-slide="next" href="#carousel-example-generic">
+                    <div id="draggable" class="draggable">
+                    </div>
+
+                    <div class="dragTo">
+                    </div>
+                </div>
+                <!--RANGE SLIDER-->
+                <div class="slider" id="styling-after-slider"></div>
+                <!--END RANGE SLIDER-->
+                <!--BUTTONS-->
+                <div class="button-container">
+                    <!--BUTTON DAY-->
+                    <label>
+                        <input type="radio" name="optradio" value="day" />
+                        <div class="img-day">
+                        </div>
+                   </label>
+                    <!--END BUTTON DAY-->
+                    <!--BUTTON WEEK-->
+                    <label>
+                        <input type="radio" name="optradio" value="week" />
+                        <div class="img-week">
+                        </div>
+                    </label>
+                    <!--END BUTTON WEEK-->
+                    <!--BUTTON MOUNTH-->
+                    <label>
+                        <input type="radio" name="optradio" value="mounth" />
+                        <div class="img-mounth">
+                        </div>
+                    </label>
+                    <!--END BUTTON MOUNTH-->
+                </div>
+                <!--END BUTTONS-->
+            </div>
+            <!--END FIRST SLIDE-->
+
+            <!--SECOND SLIDE-->
+            <div class="item" id="secondSlide">
+                <input type="button" id="btnBack" data-slide="prev" href="#carousel-example-generic">
+                <!--ROW HAPPY-->
+                <div class="row hidden" id="good">
+                    <div class="dragFrom">
+                    </div>
+                    <div class="dragTo bye hi">
+                        <div id="draggable" class="draggable bye">
+                        </div>
+                    </div>
+                </div>
+                <!--END ROW HAPPY-->
+
+                <!--ROW UNHAPPY-->
+                <div class="row" id="bad">
+                    <div id="draggable2" class="draggable">
+                    </div>
+                    <div class="dragTo">
+                    </div>
+                </div>
+                <!--END ROW UNHAPPY-->
+
+                <!--RANGE SLIDER-->
+
+                <div class="slider2" id="styling-after-slider" disabled></div>
+
+                <!--END RANGE SLIDER-->
+
+                <!--BUTTONS-->
+                <div class="button-container">
+                    <!--DAY BUTTON-->
+                    <label>
+                        <input type="radio" id="day" name="optradio" value="day" disabled/>
+                        <div class="img-day">
+                        </div>
+                    </label>
+                    <!--END DAY BUTTON-->
+                    <!--WEEK BUTTON-->
+                    <label>
+                        <input type="radio" id="week" name="optradio" value="week" disabled/>
+                        <div class="img-week">
+                        </div>
+                    </label>
+                    <!--END WEEK BUTTON-->
+                    <!--MOUNTH BUTTON-->
+                    <label>
+                        <input type="radio" id="mounth" name="optradio" value="mounth" disabled/>
+                        <div class="img-mounth">
+                        </div>
+                    </label>
+                    <!--END MOUNTH BUTTON-->
+                </div>
+            </div>
+            <!--END SECOND SLIDE-->
+        </div>
+        <!--END CAROUSEL INNER-->
+    </div>
+    <!--END CAROUSEL-->
+
+
+    <script src="./dist/javaScript/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,437 @@
+@import 'bootstrap.css';
+@import 'slider.css';
+body {
+    background: rgba(43, 110, 181, 1);
+    background: -moz-linear-gradient(left, rgba(43, 110, 181, 1) 0%, rgba(59, 123, 196, 1) 38%, rgba(59, 125, 196, 1) 67%, rgba(59, 125, 196, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(43, 110, 181, 1)), color-stop(38%, rgba(59, 123, 196, 1)), color-stop(67%, rgba(59, 125, 196, 1)), color-stop(100%, rgba(59, 125, 196, 1)));
+    background: -webkit-linear-gradient(left, rgba(43, 110, 181, 1) 0%, rgba(59, 123, 196, 1) 38%, rgba(59, 125, 196, 1) 67%, rgba(59, 125, 196, 1) 100%);
+    background: -o-linear-gradient(left, rgba(43, 110, 181, 1) 0%, rgba(59, 123, 196, 1) 38%, rgba(59, 125, 196, 1) 67%, rgba(59, 125, 196, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(43, 110, 181, 1) 0%, rgba(59, 123, 196, 1) 38%, rgba(59, 125, 196, 1) 67%, rgba(59, 125, 196, 1) 100%);
+    background: linear-gradient(to right, rgba(43, 110, 181, 1) 0%, rgba(59, 123, 196, 1) 38%, rgba(59, 125, 196, 1) 67%, rgba(59, 125, 196, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2b6eb5', endColorstr='#3b7dc4', GradientType=1);
+    width: 100%;
+    height: 100%;
+}
+
+.bg {
+    top: -70px;
+    position: absolute;
+    background: url('../img/back.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* RANGE SLIDER */
+
+.slider,
+.slider2 {
+    position: absolute;
+    bottom: 103px;
+    width: 73%;
+    display: block;
+    left: 15%;
+}
+
+.ui-widget-content {
+    background: transparent;
+    border: 0px;
+}
+
+#styling-after-slider {
+    margin-top: 3em;
+}
+
+#styling-after-slider .ui-slider-pip {
+    top: 11px;
+}
+
+#styling-after-slider .ui-slider-pip .ui-slider-label {
+    top: -63px;
+    width: 44px;
+    height: 46px;
+    font-size: 1.7rem;
+    /*for desktop font-size: 1.4rem;*/
+    color: white;
+}
+
+.ui-slider-pips .ui-slider-pip {
+    line-height: 3.2em;
+    color: white;
+}
+
+.ui-slider-pips [class*=ui-slider-pip-selected] {
+    color: white;
+}
+
+#styling-after-slider .ui-slider-handle {
+    background: url('../img/roller_white.png');
+    background-size: cover;
+    width: 89px;
+    height: 90px;
+    border-color: transparent;
+    margin-left: -35px;
+    margin-top: -10px;
+}
+
+.ui-slider-line {
+    display: none;
+}
+
+.ui-slider-pip-selected .ui-slider-label {
+    background: url('../img/roller_red.png');
+    background-size: cover;
+}
+
+
+/* END Slider Range */
+
+
+/* CAROUSEL */
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100vh;
+}
+
+
+/*END CAROUSEL*/
+
+
+/* BUTTONS */
+
+.button-container {
+    position: absolute;
+    bottom: 55px;
+    left: 26%;
+}
+
+#btnAdd {
+    position: fixed;
+    top: 42%;
+    background-color: transparent;
+    border: 0px;
+    background: url('../img/arrow.png');
+    width: 32px;
+    height: 60px;
+    right: 40px;
+    transform: rotate(180deg);
+    z-index: 999;
+}
+
+#btnBack {
+    position: fixed;
+    top: 42%;
+    background-color: transparent;
+    border: 0px;
+    background: url('../img/arrow.png');
+    width: 32px;
+    height: 60px;
+    left: 40px;
+}
+
+label>input {
+    /* HIDE RADIO */
+    visibility: hidden;
+    /* Makes input not-clickable */
+    position: absolute;
+    /* Remove input from document flow */
+}
+
+label>input:checked+.img-day {
+    background: url('../img/day-pushed-button.png');
+}
+
+label>input:checked+.img-week {
+    background: url('../img/week-pushed-button.png');
+}
+
+label>input:checked+.img-mounth {
+    background: url('../img/mounth-pushed-button.png');
+}
+
+label>input+.img-day,
+label>input+.img-week,
+label>input+.img-mounth {
+    cursor: pointer;
+    width: 170px;
+    height: 54px;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+}
+
+label>input:checked+.img-day,
+label>input:checked+.img-week,
+label>input:checked+.img-mounth {
+    width: 170px;
+    height: 58px;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+}
+
+
+/*.img-day,
+  .img-week,
+  .img-mounth {
+      background-size: cover;
+      width: 209px;
+      height: 75px;
+  }*/
+
+.img-day {
+    background: url('../img/day-button.png');
+}
+
+.img-week {
+    background: url('../img/week-button.png');
+}
+
+.img-mounth {
+    background: url('../img/mounth-button.png');
+}
+
+
+/* END BUTTONS */
+
+
+/* DRAGABLE */
+
+.marg {
+    margin-top: 180px;
+    margin-left: 50px;
+}
+
+.draggable {
+    background: url('../img/pill.png');
+    background-size: cover;
+    width: 143px;
+    height: 63px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.start {
+    top: 200px;
+    left: 200px;
+    z-index: 999999;
+}
+
+.dragFrom {
+    float: left;
+}
+
+.dragTo {
+    width: 450px;
+    height: 400px;
+    background: url('../img/sad.png');
+    background-size: cover;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#not {
+    opacity: 0.85;
+    box-shadow: none;
+}
+
+.gu-mirror {
+    z-index: 5;
+    display: hidden;
+    margin: 0 !important;
+}
+
+.gu-hide {
+    display: none !important;
+}
+
+.gu-transit {
+    opacity: 0;
+    background-size: cover;
+    width: 0px;
+    height: 0px;
+}
+
+.noBorder {
+    border: none;
+}
+
+.bye {
+    opacity: 0;
+    background: transparent;
+    transition: all 1.5s linear;
+}
+
+.hi {
+    opacity: 1;
+    transition: all 1.5s ease;
+    background: url('../img/happy.png');
+    background-size: cover;
+    width: 835px;
+    height: 510px;
+}
+
+#draggable,
+#draggable2 {
+    width: 103px;
+    height: 44px;
+    z-index: 99999;
+    position: absolute;
+    top: 200px;
+    left: 50px;
+}
+
+
+/* END DRAGGABLE */
+
+@media (max-width: 1025px) {
+    .bg {
+        background-repeat: no-repeat;
+        height: 90%;
+        top: 9%;
+    }
+    .slider,
+    .slider2 {
+        position: absolute;
+        bottom: 207px;
+        width: 73%;
+        display: block;
+        left: 13%;
+    }
+    .hi {
+        width: 761px;
+        height: 424px;
+        margin-top: 9px;
+    }
+    #btnAdd {
+        position: fixed;
+        top: 42%;
+        background-color: transparent;
+        border: 0px;
+        background: url('../img/arrow.png');
+        width: 32px;
+        height: 60px;
+        right: 40px;
+        transform: rotate(180deg);
+    }
+    #btnBack {
+        position: fixed;
+        top: 42%;
+        background-color: transparent;
+        border: 0px;
+        background: url('../img/arrow.png');
+        width: 32px;
+        height: 60px;
+        left: 40px;
+    }
+    .button-container {
+        position: absolute;
+        bottom: 55px;
+        left: 26%;
+    }
+}
+
+@media (max-width: 787px) {
+    .bg {
+        background-repeat: no-repeat;
+        height: 90%;
+        top: 25%;
+        background-size: contain;
+    }
+    .slider,
+    .slider2 {
+        position: absolute;
+        bottom: 191px;
+        width: 74%;
+        display: block;
+        left: 12%;
+    }
+    .hi {
+        width: 761px;
+        height: 424px;
+        margin-top: 9px;
+    }
+    #btnAdd {
+        position: fixed;
+        top: 42%;
+        background-color: transparent;
+        border: 0px;
+        background: url('../img/arrow.png');
+        width: 32px;
+        height: 60px;
+        right: 40px;
+        transform: rotate(180deg);
+    }
+    #btnBack {
+        position: fixed;
+        top: 42%;
+        background-color: transparent;
+        border: 0px;
+        background: url('../img/arrow.png');
+        width: 32px;
+        height: 60px;
+        left: 40px;
+    }
+    .button-container {
+        position: absolute;
+        bottom: 106px;
+        left: 31%;
+    }
+    label>input+.img-day,
+    label>input+.img-week,
+    label>input+.img-mounth {
+        cursor: pointer;
+        width: 100px;
+        height: 34px;
+        background-size: cover;
+        background-repeat: no-repeat !important;
+    }
+    label>input:checked+.img-day,
+    label>input:checked+.img-week,
+    label>input:checked+.img-mounth {
+        width: 100px;
+        height: 34px;
+        background-size: cover;
+        background-repeat: no-repeat !important;
+    }
+    #styling-after-slider .ui-slider-handle {
+        width: 63px;
+        height: 63px;
+        margin-left: -15px;
+        margin-top: -3px;
+    }
+    #styling-after-slider .ui-slider-pip .ui-slider-label {
+        font-size: .7rem;
+        width: 24px;
+        height: 23px;
+        top: -36px;
+    }
+    .ui-slider-pips .ui-slider-pip {
+        line-height: 2.3rem;
+    }
+    .ui-slider-pips .ui-slider-label {
+        left: 83%;
+    }
+    .dragTo {
+        top: 37%;
+        width: 387px;
+        height: 400px;
+    }
+    #draggable {
+        width: 103px;
+        height: 44px;
+    }
+    .hi {
+        width: 700px;
+        background-position-x: center;
+    }
+}

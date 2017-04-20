@@ -1,0 +1,31 @@
+{
+  "name": "test",
+  "author": "Kirill SHumov",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "gulp": "^3.8.8",
+    "gulp-browserify": "^0.5.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-if": "^2.0.1",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^2.2.20",
+    "gulp-webserver": "^0.8.8"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "dragula": "^3.7.2",
+    "jquery": "^3.1.1",
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-browserify": "^1.11.0-pre-seelio"
+  }
+}
